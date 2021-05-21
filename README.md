@@ -10,4 +10,4 @@ Task 1:
 ** Git Bash
 ** Git Extension
 ** GitHub Desktop
-* Created **README** following [markdown (.md) syntax](https://guides.github.com/features/mastering-markdown/)
+* :clipboard: Created **README** following [markdown (.md) syntax](https://guides.github.com/features/mastering-markdown/)
