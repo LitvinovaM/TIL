@@ -11,3 +11,8 @@ Task 1:
   * Git Extension
   * GitHub Desktop
 * :clipboard: Created **README** following [markdown (.md) syntax](https://guides.github.com/features/mastering-markdown/)
+
+Task 2:
+* :computer: Installed [Docker on Windows 10](https://docs.docker.com/docker-for-windows/install/)
+* :copyright: Pulled **sskorol/http-playground** [container locally](https://docs.docker.com/engine/reference/commandline/pull/)
+`docker pull sskorol/http-playground`
