@@ -28,3 +28,15 @@ Task 2:
  `./download_image.sh LitvinovaM ./image.png`
  * Stiped container
  `docker stop CONTAINER ID`
+
+Task 3:
+* created txt file with the following inputs:
+`Application Type: Web, Mobile Native, Hybrid
+Mobile Platform: iOS, Android
+Browser: Chrome, Firefox, Safari
+Programming Language: Java, JS, Python, Swift, C#
+Unit Framework: TestNG, JUnit, Mocha, Jest, Jasmine, PyTest, Unittest, Nose2
+Web Frameworks: Selenide, Serenity, WebdriverIO, Cypress, CodeceptJS, Puppeteer, Playwrite, Helium
+Mobile Frameworks: Appium, Espresso, XCUITest, Detox, Xamarin
+Infrastructure: Selenium Grid, Selenoid`
+* added constraints into txt file
