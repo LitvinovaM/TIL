@@ -31,7 +31,7 @@ Task 2:
 
 Task 3:
 * created txt file with the following inputs:
-`Application Type: Web, Mobile Native, Hybrid
+`Application Type: Web, Mobile Native, Hybrid/n
 Mobile Platform: iOS, Android
 Browser: Chrome, Firefox, Safari
 Programming Language: Java, JS, Python, Swift, C#
