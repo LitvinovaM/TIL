@@ -1,0 +1,50 @@
+Application Type: Web, Mobile Native, Hybrid
+Mobile Platform: iOS, Android
+Browser: Chrome, Firefox, Safari, NONE
+Programming Language: Java, JS, Python, Swift, C#
+Unit Framework: TestNG, JUnit, Mocha, Jest, Jasmine, PyTest, Unittest, Nose2, NONE
+Web Framework: Selenide, Serenity, WebdriverIO, Cypress, CodeceptJS, Puppeteer, Playwright, Helium
+Mobile Framework: Appium, Espresso, XCUITest, Detox, Xamarin
+Infrastructure: Selenium Grid, Selenoid, NONE
+
+IF [Web Framework] = "Selenide"
+ THEN [Programming Language] = "Java" AND [Infrastructure] in {"Selenium Grid", "Selenoid"};
+
+IF [Web Framework] = "Serenity"
+ THEN [Browser] in {"Chrome", "Firefox"} AND [Programming Language] in {"JS", "C#"} AND [Infrastructure] = "NONE";
+
+IF [Web Framework] in {"WebdriverIO", "Cypress", "CodeceptJS", "Puppeteer"}
+ THEN [Browser] in {"Chrome", "Firefox"} AND [Programming Language] = "JS" AND [Infrastructure] = "NONE";
+
+IF [Web Framework] = "Playwright"
+ THEN [Browser] in {"Chrome", "Firefox"} AND [Programming Language] in {"JS", "Python", "Java"} AND [Infrastructure] in {"Selenium Grid", "Selenoid"};
+
+IF [Web Framework] = "Helium"
+ THEN [Programming Language] = "Python" AND [Infrastructure] in {"Selenium Grid", "Selenoid"};
+
+IF [Mobile Framework] = "Appium" 
+ THEN [Application Type] = "Hybrid" AND [Programming Language] in {"Java", "JS", "Python", "C#"};
+ 
+IF [Mobile Framework] = "Espresso"
+ THEN [Application Type] = "Mobile Native" AND [Mobile Platform] = "Android" AND [Browser] = "NONE" AND [Programming Language] = "Java" AND [Unit Framework] = "JUnit";
+ 
+IF [Mobile Framework] = "XCUITest"
+ THEN [Application Type] = "Mobile Native" AND [Mobile Platform] = "iOS" AND [Browser] = "NONE" AND [Programming Language] = "Swift";
+ 
+IF [Mobile Framework] = "Detox"
+ THEN [Application Type] = "Web" AND [Programming Language] = "JS" AND [Unit Framework] in {"Mocha", "Jest"};
+
+IF [Mobile Framework] = "Xamarin"
+ THEN ([Application Type] = "Hybrid" AND [Mobile Platform] in {"Android", "iOS"} AND [Browser] = "NONE" AND [Programming Language] = "C#"); 
+
+IF [Unit Framework] in {"TestNG", "JUnit"}
+ THEN [Programming Language] = "Java";
+
+IF [Unit Framework] in {"PyTest", "Nose2", "Unittest"}
+ THEN [Programming Language] = "Python";
+
+IF [Unit Framework] in {"Mocha", "Jest"}
+ THEN [Programming Language] = "JS" AND [Infrastructure] = "NONE" AND [Browser] in {"Chrome", "Firefox"};
+
+IF [Unit Framework] in {"Jasmine"}
+ THEN [Programming Language] in {"JS", "Python"} AND [Infrastructure] = "NONE";
