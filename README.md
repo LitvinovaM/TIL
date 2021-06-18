@@ -31,12 +31,14 @@ Task 2:
 
 Task 3:
 * created txt file with the following inputs:
-   * Application Type: Web, Mobile Native, Hybrid
-   * Mobile Platform: iOS, Android
-   * Browser: Chrome, Firefox, Safari
-   * Programming Language: Java, JS, Python, Swift, C#
-   * Unit Framework: TestNG, JUnit, Mocha, Jest, Jasmine, PyTest, Unittest, Nose2
-   * Web Frameworks: Selenide, Serenity, WebdriverIO, Cypress, CodeceptJS, Puppeteer, Playwrite, Helium
-   * Mobile Frameworks: Appium, Espresso, XCUITest, Detox, Xamarin
-   * Infrastructure: Selenium Grid, Selenoid`
+   * **Application Type:** Web, Mobile Native, Hybrid
+   * **Mobile Platform:** iOS, Android
+   * **Browser:** Chrome, Firefox, Safari
+   * **Programming Language:** Java, JS, Python, Swift, C#
+   * **Unit Framework:** TestNG, JUnit, Mocha, Jest, Jasmine, PyTest, Unittest, Nose2
+   * **Web Frameworks:** Selenide, Serenity, WebdriverIO, Cypress, CodeceptJS, Puppeteer, Playwrite, Helium
+   * **Mobile Frameworks:** Appium, Espresso, XCUITest, Detox, Xamarin
+   * **Infrastructure:** Selenium Grid, Selenoid`
 * added constraints into txt file
+* downloaded [**pict**]( https://github.com/microsoft/pict/releases/download/release/pict.exe) for Windows
+* ran the command into Windows PowerShell `./pict file.txt > file.xls`
